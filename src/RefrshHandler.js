@@ -8,9 +8,9 @@ function RefrshHandler({ setIsAuthenticated }) {
     useEffect(() => {
         if (localStorage.getItem('token')) {
             setIsAuthenticated(true);
-            if (location.pathname === '/' ||
-                location.pathname === '/login' ||
-                location.pathname === '/signup'
+            if (location.pathname === 'https://mern-form-backend-62bo.onrender.com/auth/' ||
+                location.pathname === 'https://mern-form-backend-62bo.onrender.com/auth/login' ||
+                location.pathname === 'https://mern-form-backend-62bo.onrender.com/auth/signup'
             ) {
                 navigate('/home', { replace: false });
             }
